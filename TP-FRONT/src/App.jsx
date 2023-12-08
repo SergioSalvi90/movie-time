@@ -163,7 +163,7 @@ function App() {
           {movies.map((movie) => (
             <div
               key={movie.id}
-              className="col-md-4 mb-3"
+              className="col-md-4 mb-3 mt-3"
               onClick={() => selectMovie(movie)}
             >
               <img
@@ -177,14 +177,14 @@ function App() {
               
               <button
                 onClick={() => addToFavorites(movie)}
-                className="btn btn-primary"
+                className="btn btn-primary mt-3"
               >
                 Agregar a Favoritos
               </button>
             
               <button
                 onClick={() => setMovie(movie)}
-                className="btn btn-secondary text-black" 
+                className="btn btn-secondary text-black mt-3" 
               >
                 Ver Detalles
               </button>
